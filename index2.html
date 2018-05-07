@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>黑板粉笔字</title>
+    <link rel="stylesheet" href="../asset/lib/eui/eui-reset.css">
+	<link rel="stylesheet" href="css/chalk.css">
+</head>
+<body>
+    <img src="img/bg.png" id="pattern" width=50 height=50>
+    <div id="chalkboard" class="chalkboard"></div>
+    <div id="chalk" class="chalk"></div>
+
+	<script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
+	<script src="../draw.js"></script>
+    <script src="../draw.chalk.js"></script>
+    <script>
+        var db = new DrawBoard('chalkboard', {
+            width: 800,
+            height: 500
+        });
+        db.useChalk();
+    </script>
+</body>
+</html>
